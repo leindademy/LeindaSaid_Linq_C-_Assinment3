@@ -10,10 +10,10 @@ namespace LeindaSaid_Linq_C__Assinment3
             /// 1. Get the first 3 orders from customers in Washington
             //var CustomerOrders = CustomerList.Select(CustomerData => new { CustomerData.City, CustomerData.Orders }).Where(City => City.City == "Washington").Take(3);
             //foreach (var item in CustomerOrders)
-            //   {
-            //       Console.WriteLine(item);
-            //   }
-            #endregion 
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
 
             #region Ques_2
             // 2. Get all but the first 2 orders from customers in Washington.
@@ -50,7 +50,7 @@ namespace LeindaSaid_Linq_C__Assinment3
 
             #region Ques_5
             // 5. Get the elements of the array starting from the first element less than its position.
-           // int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+            // int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
 
             int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
             var array = numbers.TakeWhile((number, index) => number >= index);
